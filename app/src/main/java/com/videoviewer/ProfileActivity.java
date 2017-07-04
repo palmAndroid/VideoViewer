@@ -14,6 +14,6 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(getApplicationContext(),"Hi From ProfileActivity", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Hi From ProfileActivity!!!", Toast.LENGTH_LONG).show();
     }
 }
