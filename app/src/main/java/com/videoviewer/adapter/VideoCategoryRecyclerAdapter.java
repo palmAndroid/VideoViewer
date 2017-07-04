@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 import com.videoviewer.MainActivity;
 import com.videoviewer.R;
+import com.videoviewer.VideoViewActivity;
 import com.videoviewer.entity.VideoCategoryInfo;
 import java.util.List;
 
@@ -50,19 +51,10 @@ public class VideoCategoryRecyclerAdapter extends RecyclerView.Adapter<VideoCate
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     Intent intent = new Intent(mainActivity, VideoViewActivity.class);
                     intent.putExtra("VIDEO_ID", item.getId());
                     intent.putExtra("VIDEO_TITLE", item.getTitle());
                     intent.putExtra("VIDEO_DESCRIPTION", item.getDescription());
-                    mainActivity.startActivity(intent, options.toBundle());
-                } else {
-                    Intent video = new Intent(context, VideoViewActivity.class);
-                    video.putExtra("VIDEO_ID", item.getId());
-                    video.putExtra("VIDEO_TITLE", item.getTitle());
-                    video.putExtra("VIDEO_DESCRIPTION", item.getDescription());
-                    context.startActivity(video);
-                }*/
             }
         });
     }
